@@ -6,16 +6,16 @@ Let's focus on the *classicmodels* database as an example to answer this questio
 <br>
 
 Firstly, we would be `SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"` 
-* This generates references to all columns we want to appear in the output of our query
+* This generates references to all columns we want to appear in the output of our query <br> 
 Next, we would use `FROM customers c`
-* This specifies our first table to begin with, as well as an alias, to simplify our code
+* This specifies our first table to begin with, as well as an alias, to simplify our code <br> 
 Next, we would employ the use of `LEFT JOIN orders o ON o.customerNumber = c.customerNumber`
-* Using a left join here means we include all results from the customers table (our *left* table), even when that customer number cannot be located in the orders table
+* Using a left join here means we include all results from the customers table (our *left* table), even when that customer number cannot be located in the orders table <br> 
 Next, we would use `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber`
-* Doing so carries over all of the results so far from our "left table" and continues to match the orderdetails table to the orders table
+* Doing so carries over all of the results so far from our "left table" and continues to match the orderdetails table to the orders table <br> 
 Finally, we need to use `GROUP BY c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber;`
-* This GROUP BY stage groups our records together so all order information is grouped with its order number, and subsequently grouped with its associated customer information as well. 
-So our final query would be <br>`SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"`<br>
+* This GROUP BY stage groups our records together so all order information is grouped with its order number, and subsequently grouped with its associated customer information as well.  <br> 
+So our final query would be <br> <br>`SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"`<br>
 `FROM customers c`<br>
 `LEFT JOIN orders o ON o.customerNumber = c.customerNumber`<br>
 `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber` <br> 
