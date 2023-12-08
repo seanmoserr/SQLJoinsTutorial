@@ -7,7 +7,8 @@
 This is a project for my IT1600, Digital Systems class, where I utilized the use of Visual Studio Code, Terminal, Docker, iMovie, and the SQL language to demonstrate how to use joins in order to query a database.
 
 ## Directory
-Links to Docker, Visual Studio Code, the "classicmodels" databse, as well as the "classicmodels" database schema can all be found *below!*
+Links to the Tutorial, Docker, Visual Studio Code, the "classicmodels" databse, as well as the "classicmodels" database schema can all be found *below!*
+- [Video Tutorial](https://youtu.be/6O-k023Goco)
 - [Docker](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [ClassicModels Database]()
