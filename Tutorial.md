@@ -6,7 +6,7 @@ Let's focus on the *classicmodels* database as an example to answer this questio
 <br>
 
 Firstly, we would be `SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"` 
-* This generates references to all columns we want to appear in the output of our query <br> 
+* This generates references to all columns we want to appear in the output of our query <br>
 Next, we would use `FROM customers c`
 * This specifies our first table to begin with, as well as an alias, to simplify our code <br> 
 Next, we would employ the use of `LEFT JOIN orders o ON o.customerNumber = c.customerNumber`
