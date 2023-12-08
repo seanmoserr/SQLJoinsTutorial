@@ -12,6 +12,6 @@ Links to the Tutorial, Docker, Visual Studio Code, the "classicmodels" databse, 
 - [Code Used in Tutorial](https://github.com/seanmoserr/SQLJoinsTutorial/blob/main/it1600demo.sql)
 - [Docker](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [ClassicModels Database]()
+- [ClassicModels Database](https://github.com/seanmoserr/SQLJoinsTutorial/blob/main/classicmodels.sql)
 - [ClassicModels Database Schema]()
 
