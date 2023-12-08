@@ -13,5 +13,5 @@ Links to the Tutorial, Docker, Visual Studio Code, the "classicmodels" databse, 
 - [Docker](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [ClassicModels Database](https://github.com/seanmoserr/SQLJoinsTutorial/blob/main/classicmodels.sql)
-- [ClassicModels Database Schema]()
+- [ClassicModels Database Schema](https://github.com/seanmoserr/SQLJoinsTutorial/blob/main/Classic-Models-Schema.pdf)
 
