@@ -17,7 +17,7 @@ So our final query would be <br>`SELECT c.customerName, c.phone, c.contactFirstN
 `FROM customers c`<br>
 `LEFT JOIN orders o ON o.customerNumber = c.customerNumber`<br>
 `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber` <br> 
-`GROUP BY c.customerName;`
+`GROUP BY c.customerName, c.phone;`
 
 
 
