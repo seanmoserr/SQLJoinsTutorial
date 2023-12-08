@@ -16,7 +16,8 @@ Next, we would use `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber`
 So our final query would be <br>`SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"`<br>
 `FROM customers c`<br>
 `LEFT JOIN orders o ON o.customerNumber = c.customerNumber`<br>
-`LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber;`
+`LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber` <br> 
+`GROUP BY c.customerName;`
 
 
 
