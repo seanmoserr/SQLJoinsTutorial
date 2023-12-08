@@ -13,9 +13,9 @@ Next, we would employ the use of `LEFT JOIN orders o ON o.customerNumber = c.cus
 * Using a left join here means we include all results from the customers table (our *left* table), even when that customer number cannot be located in the orders table
 Next, we would use `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber`
 * Doing so carries over all of the results so far from our "left table" and continues to match the orderdetails table to the orders table
-So our final query would be <br>`SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"`
-`FROM customers c`
-`LEFT JOIN orders o ON o.customerNumber = c.customerNumber`
+So our final query would be <br>`SELECT c.customerName, c.phone, c.contactFirstName, c.contactLastName, o.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS "Order Total"`<br>
+`FROM customers c`<br>
+`LEFT JOIN orders o ON o.customerNumber = c.customerNumber`<br>
 `LEFT JOIN orderdetails od ON od.orderNumber = o.orderNumber;`
 
 
